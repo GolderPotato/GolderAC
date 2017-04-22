@@ -1,0 +1,156 @@
+###########################################
+#                                         #
+#        ########   #######  ######       #
+#        #          #     #  #            #
+#        #    ###   #     #  #            #
+#        #      #   #######  #            #
+#        ########   #     #  ######       #
+#          (Hackers get f*cked!)          #
+###########################################
+#MADE BY GOLDERPOTATO (@GolderPotato) for spigot 1.8.8 (does not work with 1.7/1.9/1.10/1.11/1.12 etc...)
+
+#########################################
+############  GENERAL INFO  #############
+#########################################
+
+#### COMMANDS ####
+
+# /acban           description: well ban a player duh                               usage: /acban <player> <cheatname>   permission: gac.acban
+# /bungeetp        description: teleport into a players server                      usage: /bungeetp <player>            permission: gac.bungeetp
+# /cheatlist       description: list of detected hackes (pretty useless             usage: /cheatlist                    permission: none
+# /cc              description: clear chat                                          usage: /cc                           permission: gac.chatclear
+# /packetlist      description: get packets sent last second              (debug)   usage: /packetlist                   permission: gac.dev
+# /pluginmessage   description: send a plugin message with args           (debug)   usage: /pluginmessage <><><>...      permission: gac.dev
+# /vel             description: set your velocity                         (debug)   usage: /vel <x> <y> <z>              permission: gac.dev
+
+##################
+
+
+
+##### PERMS ######
+
+# gac.alerts   description: receive hack logs   server: bungeecord/bukkit (depending if bungeecord is enabled below)
+
+##################
+
+
+
+#########################################
+########  GOLDERAC CONFIG FILE  #########
+#########################################
+
+
+####  GENERAL  ####
+eula: false #please set this to true and confirm you will not: decompile this plugin, sell this plugin without my permission, give this plugins to others!
+pluginEnabled: true #enable or disable plugin
+alertops: false #bypass perm: gac.bypass
+bungeecord: true #set to true if you have this plugin installed on a BungeeCord/ForkedBungee proxy and have set the permissions on that proxy
+prefix: §8[§cANTI-CHEAT§8] §a #feel free to change! This is just the example prefix
+maxtps: 19 #set this to the prefered tps for bypassing
+maxping: 120 #set this to the prefered player ping for bypassing
+###################
+
+
+##### TWITTER #####
+twitter.enabled: true
+twitter.prefix: GolderAC
+oauthconsummerkey: FhajwFMNieUwSrgkGviiYOJMo
+oauthconsummerkeysecret: mh830dmNFAgpQT1Voo3rCAvN1ZFindhX1bmidOeHy0cHq8VFTR
+accesstoken: 850714411966844928-Va9aO3Oc4skBw9uTRDlT9qw4b9RrNMO
+accesstokensecret: CfV5cfQlUKMWafNbnW5Z48oXOYVaku1ZeH4ncTgjic4ye
+###################
+
+
+######  SQL  ######
+sql.enabled: false
+host:
+username:
+password:
+dbname:
+###################
+
+
+
+#####  HACKS  #####
+#set enabled to false if you get false positives, if occurs please contact me! (@GolderPotato), set autoban to true if you want your players to get automaticaly banned
+#NOTE: you generally don't want to change any of the values; change only if needed (if you get false positives...) because these settings are already made optimal
+blink:
+  enabled: true
+  autoban: false
+autoclick:
+  enabled: true
+  autoban: false
+step:
+  enabled: true
+  autoban: true
+  height: 1.0      #base jump height (you generally don't want to touch this)                (double)
+noslowdown:
+  enabled: true
+  autoban: false
+glide:
+  enabled: true
+  autoban: true
+fly:
+  enabled: true
+  autoban: true
+reach:
+  enabled: true
+  autoban: false
+speedhack:
+  enabled: true
+  autoban: true
+  basespeed: 0.41    #base speedhack speed (you generally don't want to touch this)          (double)
+criticals:
+  enabled: true
+  autoban: false
+fastbow:
+  enabled: true
+  autoban: true
+  bowdelay: 900      #min bow delay for max shot                                             (int)
+antiknockback:
+  enabled: true
+  autoban: true
+nofall:
+  enabled: true
+  autoban: true
+cni:
+  enabled: true
+  autoban: true
+  packetalert: 80
+  packetban: 1000
+jesus:
+  enabled: true
+  autoban: false
+forcefield:
+  enabled: true
+  autoban: true
+  entdelay: 90        #time difference btw 2 entity attacks                                   (int)
+  minreach: 2.5       #very important do not set to 0!                                        (double)
+  maxreach: 4.65      #max reach lel                                                          (double)
+  yawdifference: 40   #the yaw difference in wich the player can hit relative to the entity   (int)
+  alertcps: 14        #the number of cps a player can do to be alerted                        (int)
+inventoryplus:
+  enabled: true
+  autoban: true
+highjump:
+  enabled: true
+  autoban: false
+  jumpheight: 0.50    #max jump height                                                        (double)
+timer:
+  enabled: true
+  autoban: false
+  alert: 30           #packets for alert                                                      (int)
+fastplace:
+  enabled: true
+  autoban: true
+  placedelay: 50      #delay btw each block placements                                        (int)
+fasteat:
+  enabled: true
+  autoban: false
+  eatdelay: 1550      #eat delay (you generally don't want to touch this                      (int)
+possiblecheat:
+  enabled: true
+  autoban: false #do not set to true!!
+###################
+
+
