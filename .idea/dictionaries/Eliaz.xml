@@ -3,11 +3,13 @@
     <words>
       <w>antiknockback</w>
       <w>autoclick</w>
+      <w>bungeecord</w>
       <w>bungeetp</w>
       <w>cheatname</w>
       <w>criticals</w>
       <w>damager</w>
       <w>dbname</w>
+      <w>despawn</w>
       <w>fastbow</w>
       <w>forcefield</w>
       <w>gplayers</w>
@@ -15,7 +17,9 @@
       <w>nofall</w>
       <w>noslowdown</w>
       <w>playerlog</w>
+      <w>solaris</w>
       <w>speedhack</w>
+      <w>sunos</w>
       <w>victime</w>
     </words>
   </dictionary>

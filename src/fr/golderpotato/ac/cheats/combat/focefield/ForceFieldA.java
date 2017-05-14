@@ -6,7 +6,7 @@ import fr.golderpotato.ac.cheats.CheatType;
 import fr.golderpotato.ac.packet.GACPacketHandler;
 import fr.golderpotato.ac.packet.GACPackets;
 import fr.golderpotato.ac.packet.Packet;
-import fr.golderpotato.ac.packet.packetlist.PacketType;
+import fr.golderpotato.ac.packet.PacketType;
 import fr.golderpotato.ac.player.GACPlayer;
 import fr.golderpotato.ac.utils.NPC;
 import org.bukkit.Bukkit;
@@ -46,27 +46,30 @@ public class ForceFieldA extends CheatListener{
     public void setupListener() {
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.USE_ENTITY) {
             @Override
-            public void Send(Packet paramPacket) {
-
+            public Packet Send(Packet paramPacket) {
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
+            public Packet Receive(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
+                if(gplayer == null)return paramPacket;
+                if(!gplayer.needsCheck())return paramPacket;
                 Object entityID = paramPacket.getPacketValue("a");
                 String eid = String.valueOf(entityID);
                 Integer id = Integer.valueOf(eid);
-                if(npcs.get(player) == null)return;
+                if(npcs.get(player) == null)return paramPacket;
                 if(id == npcs.get(player).entityid){
                     if(npcs.get(player) != null){
                         npcs.get(player).despawn(player);
                     }
                     CheatType.FORCEFIELD.alertMods(gplayer);
+                    CheatType.FORCEFIELD.ban(gplayer);
                     gplayer.forceField++;
                 }
+                return paramPacket;
             }
         });
     }

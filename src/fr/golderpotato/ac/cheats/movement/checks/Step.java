@@ -17,6 +17,7 @@ public class Step extends CheatListener{
 
     @Override
     public void onMovementCheck(GACPlayer player, Location from, Location to) {
+        if(!player.needsCheck())return;
         if(!player.isOnGround())return;
         double i = to.getY() - from.getY();
         if(i % (double)CheatType.STEP.getValue("height") == 0.0D && i != 0.0D){

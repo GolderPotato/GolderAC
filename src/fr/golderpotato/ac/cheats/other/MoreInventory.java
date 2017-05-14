@@ -20,10 +20,12 @@ public class MoreInventory extends CheatListener{
         if(player == null)return;
         GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
         if(gplayer == null)return;
+        if(!gplayer.needsCheck())return;
         if(!gplayer.isOnGround())return;
         if(gplayer.getVelocity().getX() != 0.0 && gplayer.getVelocity().getZ() != 0.0)return;
         if(gplayer.getOpenInventory().getItem(1).getType() != Material.AIR || gplayer.getOpenInventory().getItem(2).getType() != Material.AIR || gplayer.getOpenInventory().getItem(3).getType() != Material.AIR  || gplayer.getOpenInventory().getItem(4).getType() != Material.AIR ){
             CheatType.INVENTORYPLUS.alertMods(gplayer);
+            CheatType.INVENTORYPLUS.ban(gplayer);
         }
     }
 }

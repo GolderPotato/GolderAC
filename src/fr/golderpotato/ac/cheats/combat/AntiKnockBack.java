@@ -6,16 +6,13 @@ import fr.golderpotato.ac.cheats.CheatType;
 import fr.golderpotato.ac.packet.GACPacketHandler;
 import fr.golderpotato.ac.packet.GACPackets;
 import fr.golderpotato.ac.packet.Packet;
-import fr.golderpotato.ac.packet.packetlist.PacketType;
+import fr.golderpotato.ac.packet.PacketType;
 import fr.golderpotato.ac.player.GACPlayer;
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerVelocityEvent;
-import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 
 /**
@@ -32,15 +29,16 @@ public class AntiKnockBack extends CheatListener{
     public void setupListener() {
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.ENTITY_VELOCITY) {
             @Override
-            public void Send(Packet paramPacket) {
+            public Packet Send(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
+                if(gplayer == null)return paramPacket;
+                if(!gplayer.needsCheck())return paramPacket;
 
                 int eid = (int)paramPacket.getPacketValue("a");
 
-                if(player.getEntityId() != eid)return;
+                if(player.getEntityId() != eid)return paramPacket;
 
                 if ((player.getLocation().add(0.0D, 2.0D, 0.0D).getBlock().getType() != Material.AIR) ||
                         (gplayer.getLocation().add(0.0D, 2.0D, 0.0D).getBlock().getRelative(BlockFace.NORTH_WEST)
@@ -59,19 +57,19 @@ public class AntiKnockBack extends CheatListener{
                                 .getType() != Material.AIR) ||
                         (gplayer.getLocation().add(0.0D, 2.0D, 0.0D).getBlock().getRelative(BlockFace.WEST)
                                 .getType() != Material.AIR)) {
-                    return;
+                    return paramPacket;
                 }
-                if (player.getLocation().getBlock().getType().equals(Material.STATIONARY_WATER) || player.getLocation().getBlock().getType().equals(Material.STATIONARY_LAVA)) return;
+                if (player.getLocation().getBlock().getType().equals(Material.STATIONARY_WATER) || player.getLocation().getBlock().getType().equals(Material.STATIONARY_LAVA)) return paramPacket;
                 double force =
                         Math.abs(player.getVelocity().getX() + player.getVelocity().getY() + player.getVelocity().getZ());
-                if(force == 0.0784000015258789)return;
-                if(force < 0.2D)return;
+                if(force == 0.0784000015258789)return paramPacket;
+                if(force < 0.2D)return paramPacket;
                 if ((force == 0.0D) || (player.getVelocity().getX() == 0.0D) || (player.getVelocity().getZ() == 0.0D)) {
-                    return;
+                    return paramPacket;
                 }
                 int y = (int)paramPacket.getPacketValue("c");
-                if(y < 500)return;
-                if(!player.isOnGround())return;
+                if(y < 500)return paramPacket;
+                if(!player.isOnGround())return paramPacket;
 
                 new BukkitRunnable(){
                     int timer = 0;
@@ -88,15 +86,19 @@ public class AntiKnockBack extends CheatListener{
                             cancel();
                             if(y == highestpoint){
                                 CheatType.ANTIKNOCKBACK.alertMods(gplayer);
+                                if(gplayer.getPing() < 120){
+                                    CheatType.FORCEFIELD.ban(gplayer);
+                                }
                             }
                         }
                     }
                 }.runTaskTimer(Main.getInstance(), 0, 1);
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
-
+            public Packet Receive(Packet paramPacket) {
+                return paramPacket;
             }
         });
     }

@@ -1,9 +1,13 @@
 package fr.golderpotato.ac.runnable;
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.Lister;
 import fr.golderpotato.ac.Main;
 import fr.golderpotato.ac.cheats.CheatType;
+import fr.golderpotato.ac.packet.Packet;
 import fr.golderpotato.ac.player.GACPlayer;
 import fr.golderpotato.ac.utils.TPS;
+import net.minecraft.server.v1_8_R3.PacketPlayInFlying;
+import org.bukkit.Location;
 import org.bukkit.scheduler.BukkitRunnable;
 
 /**
@@ -23,6 +27,7 @@ public class MainRunnable extends BukkitRunnable{
             // FLY
             if(gplayers.Fly > 5){
                 CheatType.FLY.alertMods(gplayers, "movement");
+                CheatType.FLY.ban(gplayers);
             }
 
             // BLINK
@@ -33,12 +38,16 @@ public class MainRunnable extends BukkitRunnable{
             // AUTOCLICK
             if(gplayers.CPS > (int)CheatType.FORCEFIELD.getValue("alertcps")){
                 CheatType.AUTOCLICK.alertMods(gplayers, "CPS: "+gplayers.CPS+" PING: "+gplayers.getPing());
+                if(gplayers.CPS > 40){
+                    CheatType.AUTOCLICK.ban(gplayers);
+                }
             }
 
 
             // GLIDE
             if(gplayers.Glide > 5){
                 CheatType.GLIDE.alertMods(gplayers);
+                CheatType.GLIDE.ban(gplayers);
             }
 
             // JESUS
@@ -91,6 +100,24 @@ public class MainRunnable extends BukkitRunnable{
                 CheatType.SPEEDHACK.ban(gplayers);
             }
 
+            if(gplayers.safeWalk > 4){
+                CheatType.SAFEWALK.alertMods(gplayers);
+            }
+
+
+            if(gplayers.pings.size() >= 30) {
+                int lag = 0;
+                for (int i = gplayers.pings.size() - 30; i < gplayers.pings.size(); i++) {
+                    lag += gplayers.pings.get(0);
+                }
+                if (lag / 30 >= 200) {
+                    CheatType.ANTILAG.forceKick(gplayers, "Nous sommes désolés, mais votre vitesse de connection (>200ms sur 30 secondes) ne convient pas pour plusieurs raison:\n- Le gachis d'experience de jeux des autres joueurs\n- La charge que recoit en plus notre serveur.\nNous vous conseillons de remédier au probleme avant de retourner sur notre serveur merci :)");
+                }
+            }
+
+            if(gplayers.spiderLevel >= 3){
+                CheatType.SPIDER.alertMods(gplayers);
+            }
 
             // RESET VALUES
             gplayers.FlyLevel = 0;
@@ -108,6 +135,8 @@ public class MainRunnable extends BukkitRunnable{
             gplayers.pings.add(gplayers.getPing());
             gplayers.fastplace = 0;
             gplayers.speedhack = 0;
+            gplayers.safeWalk = 0;
+            gplayers.spiderLevel = 0;
         }
     }
 

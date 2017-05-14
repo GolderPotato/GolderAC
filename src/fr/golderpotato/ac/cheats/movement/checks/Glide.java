@@ -16,6 +16,7 @@ public class Glide extends CheatListener{
     @Override
     public void onMovementCheck(GACPlayer player, Location from, Location to) {
         if(player.getOnGround())return;
+        if(!player.needsCheck())return;
         double y = 0;
         if(to.getY() < from.getY()){
             y = from.getY() - to.getY();

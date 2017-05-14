@@ -32,7 +32,10 @@ public enum CheatType {
     FASTPLACE("FastPlace"),
     FASTEAT("FastEat"),
     POSSIBLECHEAT("PossibleCheat"),
-    AIMBOT("Aimbot");
+    AIMBOT("Aimbot"),
+    ANTILAG("AntiLag"),
+    SAFEWALK("SafeWalk"),
+    SPIDER("Spider");
 
 
     CheatType(String name){
@@ -47,6 +50,14 @@ public enum CheatType {
         player.kickPlayer(ChatUtils.getPrefix()+"Vous avez été kick pour "+cheatname);
     }
 
+    public void forceKick(GACPlayer player){
+        player.kickPlayer(ChatUtils.getPrefix()+"Vous avez été kick pour "+cheatname);
+    }
+
+    public void forceKick(GACPlayer player, String reason){
+        player.kickPlayer(ChatUtils.getPrefix()+"Vous avez été kick pour "+cheatname+"("+reason+")");
+    }
+
     public void ban(GACPlayer player){
         if(!isEnabled(this))return;
         if(!getAutoBan(this))return;
@@ -58,32 +69,28 @@ public enum CheatType {
         }
     }
 
-    public void alertMods(GACPlayer player) {
-        try {
-            if(!isEnabled(this))return;
-            if (Main.getInstance().getBypass().gacPlayers.contains(player)) return;
-            BungeeCord.alert(player, cheatname);
-            if(Main.getInstance().doSQL == true){
-                Main.getInstance().logSQL.addPlayerLog(player.getUniqueId(), cheatname);
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+    public void forceBan(GACPlayer player){
+        player.ban(this);
+    }
 
+    public void alertMods(GACPlayer player) {
+        if(!isEnabled(this))return;
+        if(Main.getInstance().getBypass().gacPlayers.contains(player)) return;
+        BungeeCord.alert(player, cheatname);
+        player.violations.put(this, "(no info)");
+        if(Main.getInstance().doSQL == true) {
+            Main.getInstance().logSQL.addPlayerLog(player.getUniqueId(), cheatname);
+        }
     }
 
     public void alertMods(GACPlayer player, String arguments){
-        try{
-            if(!isEnabled(this))return;
-            if (Main.getInstance().getBypass().isByPassed(player))return;
-            BungeeCord.alert(player, cheatname+" ("+arguments+")");
-            if(Main.getInstance().doSQL == true){
-                Main.getInstance().logSQL.addPlayerLog(player.getUniqueId(), cheatname, arguments);
-            }
-        }catch (Exception e){
-            e.printStackTrace();
+        if(!isEnabled(this))return;
+        if (Main.getInstance().getBypass().isByPassed(player))return;
+        BungeeCord.alert(player, cheatname+" ("+arguments+")");
+        player.violations.put(this, "("+arguments+")");
+        if(Main.getInstance().doSQL == true) {
+            Main.getInstance().logSQL.addPlayerLog(player.getUniqueId(), cheatname, arguments);
         }
-
     }
 
     public boolean getAutoBan(CheatType cheattype){

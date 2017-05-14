@@ -14,7 +14,7 @@ import java.lang.reflect.Field;
 
 /**
  * Created by Eliaz on 15/01/2017.
- * Credit to Faiden
+ * Credit to InventiveTalent
  */
 
 public class ChannelHandler
@@ -109,8 +109,11 @@ public class ChannelHandler
     public void channelRead(ChannelHandlerContext ctx, Object msg)
             throws Exception
     {
-        msg = GACPackets.getInstance().onReceive(new Packet(msg, this.player));
-        gplayer.packethistory.put(Double.valueOf(System.currentTimeMillis()), new Packet(msg, this.player));
-        super.channelRead(ctx, msg);
+        try {
+            msg = GACPackets.getInstance().onReceive(new Packet(msg, this.player));
+            if(msg == null)return;
+            gplayer.packethistory.put(Double.valueOf(System.currentTimeMillis()), new Packet(msg, this.player));
+            super.channelRead(ctx, msg);
+        }catch (Exception e){}
     }
 }

@@ -29,6 +29,7 @@ public class CommandManager {
         for(Command commmand : commands){
             if(commmand.name.equalsIgnoreCase(cmd)){
                 commmand.execute(in);
+                break;
             }
         }
     }

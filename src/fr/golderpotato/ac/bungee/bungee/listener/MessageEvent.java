@@ -17,7 +17,6 @@ import org.bukkit.craftbukkit.libs.org.ibex.nestedvm.util.Seekable;
  */
 public class MessageEvent implements Listener{
 
-
     @EventHandler
     public void onMessage(PluginMessageEvent event){
         System.out.println("Received plugin message...");

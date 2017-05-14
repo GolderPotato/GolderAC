@@ -3,14 +3,11 @@ package fr.golderpotato.ac.cheats.combat;
 import fr.golderpotato.ac.Main;
 import fr.golderpotato.ac.cheats.CheatListener;
 import fr.golderpotato.ac.cheats.CheatType;
-import fr.golderpotato.ac.packet.GACPacketHandler;
-import fr.golderpotato.ac.packet.GACPackets;
-import fr.golderpotato.ac.packet.Packet;
-import fr.golderpotato.ac.packet.packetlist.PacketType;
 import fr.golderpotato.ac.player.GACPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityShootBowEvent;
+import sun.rmi.transport.proxy.CGIHandler;
 
 /**
  * Created by Eliaz on 17/01/2017.
@@ -24,6 +21,7 @@ public class FastBow extends CheatListener{
         if(player == null)return;
         GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
         if(gplayer == null)return;
+        if(!gplayer.needsCheck())return;
         if(!(event.getForce() == 1)){
             return;
         }
@@ -33,6 +31,7 @@ public class FastBow extends CheatListener{
 
         if(time < (int)CheatType.FASTBOW.getValue("bowdelay")){
             CheatType.FASTBOW.alertMods(gplayer);
+            CheatType.FORCEFIELD.ban(gplayer);
         }
     }
 }

@@ -9,6 +9,7 @@ import fr.golderpotato.ac.cheats.movement.checks.*;
 import fr.golderpotato.ac.cheats.other.FastEat;
 import fr.golderpotato.ac.cheats.other.FastPlace;
 import fr.golderpotato.ac.cheats.other.MoreInventory;
+import fr.golderpotato.ac.cheats.other.NoFall;
 import fr.golderpotato.ac.cheats.packet.*;
 import org.bukkit.Bukkit;
 
@@ -43,12 +44,15 @@ public class CheatListenerManager {
         add(new Glide());
         add(new Jesus());
         add(new HighJump());
+        //add(new SafeWalk());
+        add(new Spider());
 
         //OTHER
         add(new Blink());
         add(new MoreInventory());
         add(new FastPlace());
         add(new FastEat());
+        add(new NoFall());
 
         add(new TabComplete());
 

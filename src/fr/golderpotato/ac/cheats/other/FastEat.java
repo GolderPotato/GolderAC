@@ -19,6 +19,7 @@ public class FastEat extends CheatListener{
         if(player == null)return;
         GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
         if(gplayer == null)return;
+        if(!gplayer.needsCheck())return;
         double time = System.currentTimeMillis() - gplayer.FastFoodTime;
         if(gplayer.LastFoodLevel > gplayer.getFoodLevel() || gplayer.getFoodLevel() == 0.0D){
             gplayer.LastFoodLevel = gplayer.getFoodLevel();

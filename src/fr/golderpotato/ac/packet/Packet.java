@@ -10,12 +10,13 @@ import java.util.List;
 
 /**
  * Created by Eliaz on 15/01/2017.
- * Credit to Faiden
+ * Credit to InventiveTalent
  */
 public class Packet {
 
     private Object packet;
     private Player player;
+    private boolean allowed = true;
 
     public Packet(Object packet, Player player)
     {
@@ -88,5 +89,17 @@ public class Packet {
     private boolean isSuper()
     {
         return Modifier.isStatic(this.packet.getClass().getModifiers());
+    }
+
+    public void dissalow(){
+        this.allowed = false;
+    }
+
+    public void allow(){
+        this.allowed = true;
+    }
+
+    public boolean isAllowed(){
+        return this.allowed;
     }
 }

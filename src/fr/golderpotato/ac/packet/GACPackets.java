@@ -1,19 +1,11 @@
 package fr.golderpotato.ac.packet;
 
-import fr.golderpotato.ac.packet.packetlist.PacketSource;
-import fr.golderpotato.ac.packet.packetlist.PacketType;
-import fr.golderpotato.ac.utils.NMS;
-import fr.golderpotato.ac.utils.ReflectionUtils;
-import org.bukkit.Bukkit;
-import org.bukkit.Server;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
  * Created by Eliaz on 15/01/2017.
- * Credit to Faiden
+ * Credit to InventiveTalent
  */
 public class GACPackets {
     public static List<GACPacketHandler> handles = new ArrayList<>();
@@ -31,15 +23,22 @@ public class GACPackets {
 
     public Object onReceive(Packet packet)
     {
+        Packet toReturn = packet;
         for (GACPacketHandler h : handles) {
             if(!h.getPacketType().getSource().equals(PacketSource.IN))continue;
             if (h.getPacketType().equals(PacketType.ALL)) {
-                h.Receive(packet);
+                Packet packet1 = h.Receive(packet);
+                if(!packet1.isAllowed()){
+                    toReturn = null;
+                }
             } else if (h.getPacketType().getName().equals(packet.getPacketName())) {
-                h.Receive(packet);
+                Packet packet1 = h.Receive(packet);
+                if(!packet1.isAllowed()){
+                    toReturn = null;
+                }
             }
         }
-        return packet.getPacket();
+        return toReturn.getPacket();
     }
 
     public Object onSend(Packet packet){

@@ -5,13 +5,11 @@ import fr.golderpotato.ac.cheats.CheatListener;
 import fr.golderpotato.ac.packet.GACPacketHandler;
 import fr.golderpotato.ac.packet.GACPackets;
 import fr.golderpotato.ac.packet.Packet;
-import fr.golderpotato.ac.packet.packetlist.PacketType;
+import fr.golderpotato.ac.packet.PacketType;
 import fr.golderpotato.ac.player.GACPlayer;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.player.PlayerMoveEvent;
 
 /**
  * Created by Eliaz on 15/01/2017.
@@ -22,21 +20,22 @@ public class Flight extends CheatListener{
     public void setupListener() {
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.FLYING) {
             @Override
-            public void Send(Packet paramPacket) {
-
+            public Packet Send(Packet paramPacket) {
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
+            public Packet Receive(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
-                if(gplayer.isDead())return;
-                if(!gplayer.isOnline())return;
+                if(gplayer == null)return paramPacket;
+                if(!gplayer.needsCheck())return paramPacket;
+                if(player.getLocation().getY() < 0)return paramPacket;
                 if(!gplayer.isOnGround() && gplayer.getOnGround()){
                     gplayer.FlyLevel++;
                 }
+                return paramPacket;
             }
         });
     }
@@ -47,8 +46,10 @@ public class Flight extends CheatListener{
         if(player.getAllowFlight())return;
         if(player.getGameMode().equals(GameMode.CREATIVE) || player.getGameMode().equals(GameMode.SPECTATOR))return;
         if(player.isInsideVehicle())return;
+        if(!player.needsCheck())return;
         double y = from.getY() - to.getY();
         if(y != 0)return;
+        if(player.getLocation().getY() < 0)return;
         if(player.getOnGround())return;
         player.Fly++;
     }

@@ -6,7 +6,7 @@ import fr.golderpotato.ac.cheats.CheatType;
 import fr.golderpotato.ac.packet.GACPacketHandler;
 import fr.golderpotato.ac.packet.GACPackets;
 import fr.golderpotato.ac.packet.Packet;
-import fr.golderpotato.ac.packet.packetlist.PacketType;
+import fr.golderpotato.ac.packet.PacketType;
 import fr.golderpotato.ac.player.GACPlayer;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Player;
@@ -20,16 +20,17 @@ public class EntityUseListener extends CheatListener{
     public void setupListener() {
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.USE_ENTITY) {
             @Override
-            public void Send(Packet paramPacket) {
-
+            public Packet Send(Packet paramPacket) {
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
+            public Packet Receive(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
+                if(gplayer == null)return paramPacket;
+                if(!gplayer.needsCheck())return paramPacket;
 
                 Integer eid = (Integer) paramPacket.getPacketValue("a");
                 Object s = paramPacket.getPacketValue("action");
@@ -45,6 +46,7 @@ public class EntityUseListener extends CheatListener{
                         }
                     }
                 }
+                return paramPacket;
             }
         });
     }

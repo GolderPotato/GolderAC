@@ -19,6 +19,7 @@ public class Jesus extends CheatListener{
 
     @Override
     public void onMovementCheck(GACPlayer player, Location from, Location to) {
+        if(!player.needsCheck())return;
         double y = Math.abs(from.getY() - to.getY());
         double yDiffer = Math.abs(y - player.JesusY);
         player.JesusY = y;

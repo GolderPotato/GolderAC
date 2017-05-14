@@ -22,6 +22,7 @@ public class CommandManager {
         new CheatList();
         new ClearChat();
         new PacketList();
+        new Machine();
 
         for(CommandAbstract cmds : commands){
             Main.getInstance().commandmap.register(Main.getInstance().getName(), cmds);

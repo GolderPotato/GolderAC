@@ -6,7 +6,7 @@ import fr.golderpotato.ac.cheats.CheatType;
 import fr.golderpotato.ac.packet.GACPacketHandler;
 import fr.golderpotato.ac.packet.GACPackets;
 import fr.golderpotato.ac.packet.Packet;
-import fr.golderpotato.ac.packet.packetlist.PacketType;
+import fr.golderpotato.ac.packet.PacketType;
 import fr.golderpotato.ac.player.GACPlayer;
 import net.minecraft.server.v1_8_R3.PacketPlayInBlockDig;
 import org.bukkit.Material;
@@ -27,22 +27,23 @@ public class NoSlowDown extends CheatListener{
     public void setupListener() {
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.BLOCK_DIG) {
             @Override
-            public void Send(Packet paramPacket) {
-
+            public Packet Send(Packet paramPacket) {
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
+            public Packet Receive(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
+                if(gplayer == null)return paramPacket;
                 PacketPlayInBlockDig.EnumPlayerDigType digtype = (PacketPlayInBlockDig.EnumPlayerDigType) paramPacket.getPacketValue("c");
                 if(digtype.equals(PacketPlayInBlockDig.EnumPlayerDigType.RELEASE_USE_ITEM)){
                     if(gplayer.isSprinting()){
                         gplayer.NoSlowDown++;
                     }
                 }
+                return paramPacket;
             }
         });
     }

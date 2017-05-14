@@ -2,16 +2,14 @@ package fr.golderpotato.ac.cheats.movement;
 
 import fr.golderpotato.ac.Main;
 import fr.golderpotato.ac.cheats.CheatListener;
-import fr.golderpotato.ac.command.commands.CheatList;
+import fr.golderpotato.ac.cheats.CheatType;
 import fr.golderpotato.ac.packet.GACPacketHandler;
 import fr.golderpotato.ac.packet.GACPackets;
 import fr.golderpotato.ac.packet.Packet;
-import fr.golderpotato.ac.packet.packetlist.PacketType;
+import fr.golderpotato.ac.packet.PacketType;
 import fr.golderpotato.ac.player.GACPlayer;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
-
-import java.lang.reflect.Field;
 
 /**
  * Created by Eliaz on 27/02/2017.
@@ -22,18 +20,17 @@ public class MovementCheckHandler extends CheatListener{
     public void setupListener() {
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.POSITION_LOOK) {
             @Override
-            public void Send(Packet paramPacket) {
-
+            public Packet Send(Packet paramPacket) {
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
+            public Packet Receive(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
+                if(gplayer == null)return paramPacket;
                 gplayer.PositionLook++;
-                gplayer.nofall_PositionLook++;
 
                 double x = 0;
                 double y = 0;
@@ -57,23 +54,23 @@ public class MovementCheckHandler extends CheatListener{
                 MovementCheckManager.handle(gplayer, gplayer.last, location);
 
                 gplayer.last = location;
+                return paramPacket;
             }
         });
 
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.POSITION) {
             @Override
-            public void Send(Packet paramPacket) {
-
+            public Packet Send(Packet paramPacket) {
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
+            public Packet Receive(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
+                if(gplayer == null)return paramPacket;
                 gplayer.Position++;
-                gplayer.nofall_Position++;
 
                 double x = 0;
                 double y = 0;
@@ -97,40 +94,41 @@ public class MovementCheckHandler extends CheatListener{
                 MovementCheckManager.handle(gplayer, gplayer.last, location);
 
                 gplayer.last = location;
+                return paramPacket;
             }
         });
 
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.FLYING) {
             @Override
-            public void Send(Packet paramPacket) {
-
+            public Packet Send(Packet paramPacket) {
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
+            public Packet Receive(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
+                if(gplayer == null)return paramPacket;
                 gplayer.Flying++;
-                gplayer.nofall_Flying++;
+                return paramPacket;
             }
         });
 
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.LOOK) {
             @Override
-            public void Send(Packet paramPacket) {
-
+            public Packet Send(Packet paramPacket) {
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
+            public Packet Receive(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
+                if(gplayer == null)return paramPacket;
                 gplayer.Look++;
-                gplayer.nofall_Look++;
+                return paramPacket;
             }
         });
 

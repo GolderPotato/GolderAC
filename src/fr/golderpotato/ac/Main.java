@@ -1,7 +1,5 @@
 package fr.golderpotato.ac;
 
-import fr.golderpotato.ac.cheats.CheatType;
-import fr.golderpotato.ac.cheats.combat.focefield.ForceFieldA;
 import fr.golderpotato.ac.runnable.MainRunnable;
 import fr.golderpotato.ac.cheats.CheatListenerManager;
 import fr.golderpotato.ac.command.CommandManager;
@@ -13,21 +11,18 @@ import fr.golderpotato.ac.sql.BanSQL;
 import fr.golderpotato.ac.sql.LogSQL;
 import fr.golderpotato.ac.sql.SQLConnection;
 import fr.golderpotato.ac.twitter.Twitter;
-import fr.golderpotato.ac.utils.BungeeCord;
 import fr.golderpotato.ac.utils.PluginMessage;
+import fr.golderpotato.ac.utils.ServerUtil;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandMap;
 import org.bukkit.craftbukkit.v1_8_R3.CraftServer;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import java.lang.reflect.Field;
-import java.security.SecureRandom;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 /**
  * Created by Eliaz on 15/01/2017.
@@ -96,6 +91,7 @@ public class Main extends JavaPlugin{
         for(Player players : Bukkit.getOnlinePlayers()){
             players.kickPlayer("Le serveur redémarre! Merci de ta patience =D");
         }
+
         try{
             if(Bukkit.getServer() instanceof CraftServer){
                 final Field f = CraftServer.class.getDeclaredField("commandMap");
@@ -119,9 +115,18 @@ public class Main extends JavaPlugin{
         print("Commands registered!");
 
         print("Connecting to Twitter...");
-        twitter = new Twitter();
-        print("Updating twitter status...");
-        twitter.tweetExisting("ONLINE!");
+        if(getConfig().getBoolean("twitter.enabled")) {
+            try{
+                twitter = new Twitter();
+                twitter.connect();
+            }catch (Exception e){
+                print("Connection to twitter failed! ERROR:");
+                e.printStackTrace();
+            }
+        }
+        print("Setting start time...");
+        ServerUtil.startTime = System.currentTimeMillis();
+        print("Start time set!");
     }
 
     @Override
@@ -132,7 +137,6 @@ public class Main extends JavaPlugin{
                 connection.closeConnection();
             }
             print("Updating twitter status...");
-            twitter.tweetExisting("OFFLINE");
             print("Goodbye!");
         }
     }

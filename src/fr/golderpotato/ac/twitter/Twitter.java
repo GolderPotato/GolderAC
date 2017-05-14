@@ -16,31 +16,26 @@ public class Twitter {
     public String lastTweet;
     public String prefix;
 
-    public Twitter(){
-        try {
-            ConfigurationBuilder cb = new ConfigurationBuilder();
-            cb.setDebugEnabled(true);
-            cb.setOAuthConsumerKey(Main.getInstance().getConfig().getString("oauthconsummerkey"));
-            cb.setOAuthConsumerSecret(Main.getInstance().getConfig().getString("oauthconsummerkeysecret"));
-            cb.setOAuthAccessToken(Main.getInstance().getConfig().getString("accesstoken"));
-            cb.setOAuthAccessTokenSecret(Main.getInstance().getConfig().getString("accesstokensecret"));
-            TwitterFactory factory = new TwitterFactory(cb.build());
-            twitter = factory.getInstance();
-            prefix = Main.getInstance().getConfig().getString("twitter.prefix");
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+    public void connect()throws Exception{
+        ConfigurationBuilder cb = new ConfigurationBuilder();
+        cb.setDebugEnabled(true);
+        cb.setOAuthConsumerKey(Main.getInstance().getConfig().getString("oauthconsummerkey"));
+        cb.setOAuthConsumerSecret(Main.getInstance().getConfig().getString("oauthconsummerkeysecret"));
+        cb.setOAuthAccessToken(Main.getInstance().getConfig().getString("accesstoken"));
+        cb.setOAuthAccessTokenSecret(Main.getInstance().getConfig().getString("accesstokensecret"));
+        TwitterFactory factory = new TwitterFactory(cb.build());
+        twitter = factory.getInstance();
+        prefix = Main.getInstance().getConfig().getString("twitter.prefix");
     }
 
-
     public void tweetExisting(String tweet){
-        try{
+        try {
             if(lastTweet != tweet){
                 twitter.updateStatus("["+prefix+"-"+getRandomString(5)+"] "+tweet);
                 lastTweet = tweet;
             }
         }catch (Exception e){
-            e.printStackTrace();
+           e.printStackTrace();
         }
     }
 

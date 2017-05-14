@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GolderAC.iml" filepath="$PROJECT_DIR$/GolderAC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fsd_main.iml" filepath="$PROJECT_DIR$/.idea/modules/fsd_main.iml" group="fsd" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fsd_test.iml" filepath="$PROJECT_DIR$/.idea/modules/fsd_test.iml" group="fsd" />
     </modules>
   </component>
 </project>

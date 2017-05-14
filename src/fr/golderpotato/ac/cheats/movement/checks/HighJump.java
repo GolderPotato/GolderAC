@@ -24,6 +24,7 @@ public class HighJump extends CheatListener{
         if(player.getVelocity().getY() != 0.41999998688697815)return;
         double distance = from.toVector().distance(to.toVector());
         double time = System.currentTimeMillis() - player.JumpTime;
+        if(!player.needsCheck())return;
         if(player.getLocation().getBlock().getRelative(BlockFace.DOWN) instanceof Stairs){
             player.sendMessage("true!");
         }

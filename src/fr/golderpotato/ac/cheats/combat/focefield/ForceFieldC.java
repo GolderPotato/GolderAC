@@ -6,7 +6,7 @@ import fr.golderpotato.ac.cheats.CheatType;
 import fr.golderpotato.ac.packet.GACPacketHandler;
 import fr.golderpotato.ac.packet.GACPackets;
 import fr.golderpotato.ac.packet.Packet;
-import fr.golderpotato.ac.packet.packetlist.PacketType;
+import fr.golderpotato.ac.packet.PacketType;
 import fr.golderpotato.ac.player.GACPlayer;
 import fr.golderpotato.ac.utils.PositionUtils;
 import org.bukkit.entity.Entity;
@@ -21,16 +21,17 @@ public class ForceFieldC extends CheatListener{
     public void setupListener() {
         GACPackets.getInstance().addPacketListener(new GACPacketHandler(PacketType.USE_ENTITY) {
             @Override
-            public void Send(Packet paramPacket) {
-
+            public Packet Send(Packet paramPacket) {
+                return paramPacket;
             }
 
             @Override
-            public void Receive(Packet paramPacket) {
+            public Packet Receive(Packet paramPacket) {
                 Player player = paramPacket.getPlayer();
-                if(player == null)return;
+                if(player == null)return paramPacket;
                 GACPlayer gplayer = Main.getInstance().getGACPlayer(player);
-                if(gplayer == null)return;
+                if(gplayer == null)return paramPacket;
+                if(!gplayer.needsCheck())return paramPacket;
                 int eid = (int)paramPacket.getPacketValue("a");
                 Entity ent = null;
                 for(Entity enti : player.getWorld().getEntities()){
@@ -39,7 +40,7 @@ public class ForceFieldC extends CheatListener{
                         break;
                     }
                 }
-                if(ent == null)return;
+                if(ent == null)return paramPacket;
                 double aimValue = Math.abs(PositionUtils.getDirection(player.getLocation(), ent.getLocation()));
                 double yawValue = Math.abs(PositionUtils.wrapAngleTo180_float(player.getLocation().getYaw()));
                 double difference = Math.abs(aimValue - yawValue);
@@ -48,6 +49,7 @@ public class ForceFieldC extends CheatListener{
                         CheatType.FORCEFIELD.alertMods(gplayer, "not looking @ the ent("+difference+"/30)");
                     }
                 }
+                return paramPacket;
             }
         });
     }

@@ -1,18 +1,20 @@
 package fr.golderpotato.ac.player;
 
+import fr.golderpotato.ac.ChatUtils;
+import fr.golderpotato.ac.Main;
 import fr.golderpotato.ac.cheats.CheatType;
 import fr.golderpotato.ac.packet.Packet;
+import net.minecraft.server.v1_8_R3.NBTTagList;
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
-import org.bukkit.block.DoubleChest;
-import org.bukkit.craftbukkit.libs.org.ibex.nestedvm.util.ELF;
 import org.bukkit.craftbukkit.v1_8_R3.CraftServer;
 import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
-import org.bukkit.craftbukkit.v1_8_R3.generator.InternalChunkGenerator;
 import org.bukkit.entity.Player;
+import org.bukkit.potion.PotionEffect;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,6 +32,8 @@ public class GACPlayer extends CraftPlayer{
         this.player = player;
     }
 
+    public HashMap<CheatType, String> violations = new HashMap<>();
+
     public int AllPackets = 0;
     public int KeepAlive = 0;
 
@@ -43,7 +47,7 @@ public class GACPlayer extends CraftPlayer{
     public int nofall_PositionLook = 0;
     public int nofall_Flying = 0;
     public int nofall_Position = 0;
-    public int nofall_FlyLevel = 0;
+    public int nofall = 0;
 
     public int CPS = 0;
     public long LastBowTime = 0;
@@ -63,6 +67,9 @@ public class GACPlayer extends CraftPlayer{
     public boolean tabComple = false;
     public int fastplace;
     public int speedhack;
+    public int safeWalk = 0;
+    public double lastSpiderY = 0;
+    public int spiderLevel = 0;
 
 
     public List<Float> cpslog = new ArrayList<Float>();
@@ -168,6 +175,75 @@ public class GACPlayer extends CraftPlayer{
             }
         }
         return toReturn;
+    }
+
+    public void reset(){
+        player.setGameMode(GameMode.SURVIVAL);
+        player.setAllowFlight(false);
+        ((CraftPlayer)player).getHandle().inventory.b(new NBTTagList());
+        player.setSprinting(false);
+        player.setFoodLevel(20);
+        player.setSaturation(3.0f);
+        player.setExhaustion(0.0f);
+        player.setMaxHealth(20.0);
+        player.setHealth((player).getMaxHealth());
+        player.setFireTicks(0);
+        player.setFallDistance(0.0f);
+        player.setLevel(0);
+        player.setExp(0.0f);
+        player.setWalkSpeed(0.2f);
+        player.setFlySpeed(0.1f);
+        player.getInventory().clear();
+        player.getInventory().setHelmet(null);
+        player.getInventory().setChestplate(null);
+        player.getInventory().setLeggings(null);
+        player.getInventory().setBoots(null);
+        player.updateInventory();
+        for (final PotionEffect potion : player.getActivePotionEffects()) {
+            player.removePotionEffect(potion.getType());
+        }
+    }
+
+    public double getLastPacketTime(String packetName){
+        for(int i = packethistory.size(); i > 0;i++){
+            if(packethistory.get(i).getPacketName() == packetName){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void clear(){
+        player.getInventory().clear();
+        player.getInventory().setHelmet(null);
+        player.getInventory().setChestplate(null);
+        player.getInventory().setLeggings(null);
+        player.getInventory().setBoots(null);
+        player.updateInventory();
+
+    }
+
+    public void sendACMessage(String message){
+        sendMessage(ChatUtils.getPrefix()+message);
+    }
+
+    public void broadcast(String message){
+        Bukkit.getServer().broadcastMessage("§e["+getName()+"] §f"+message);
+    }
+
+    public void removePotionEffects(){
+        for(PotionEffect effects : getActivePotionEffects()){
+            removePotionEffect(effects.getType());
+        }
+    }
+
+    public boolean needsCheck(){
+        if(Main.getInstance().bypass.isByPassed(this))return false;
+        if(getGameMode().equals(GameMode.CREATIVE) || getGameMode().equals(GameMode.SPECTATOR))return false;
+        if(!isOnline())return false;
+        if(isBanned())return false;
+        if(isDead())return false;
+        return true;
     }
 
     public boolean isDev(){
