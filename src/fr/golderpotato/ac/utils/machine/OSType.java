@@ -18,8 +18,8 @@ public enum OSType {
     }
 
     public static OSType getOSType(){
-        for(OSType osType : values()){
-            if(osType.name.indexOf(osType.name) >= 0){
+            for(OSType osType : values()){
+            if(System.getProperty("os.name").indexOf(osType.name) >= 0){
                 return osType;
             }
         }

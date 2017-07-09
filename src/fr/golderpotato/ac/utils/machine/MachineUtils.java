@@ -47,6 +47,6 @@ public class MachineUtils {
     }
 
     public static String getMachineName()throws Exception{
-       return executeCommandWithOutput("hostname");
+       return executeCommandWithOutput("hostname".replace("\n", ""));
     }
 }

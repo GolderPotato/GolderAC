@@ -35,7 +35,8 @@ public enum CheatType {
     AIMBOT("Aimbot"),
     ANTILAG("AntiLag"),
     SAFEWALK("SafeWalk"),
-    SPIDER("Spider");
+    SPIDER("Spider"),
+    ILLEGALMOVEMENT("IllegalMovement");
 
 
     CheatType(String name){

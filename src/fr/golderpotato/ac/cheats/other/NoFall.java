@@ -32,9 +32,6 @@ public class NoFall extends CheatListener{
                 if(gplayers == null)return paramPacket;
                 gplayers.nofall_PositionLook++;
                 gplayers.nofall = gplayers.nofall_Flying + gplayers.nofall_PositionLook + gplayers.nofall_Position + gplayers.nofall_Look;
-                if(gplayers.nofall > 14 && gplayers.isOnGround() && !gplayers.getOnGround()){
-                    paramPacket.dissalow();
-                }
                 return paramPacket;
             }
         });
@@ -53,9 +50,6 @@ public class NoFall extends CheatListener{
                 if(gplayers == null)return paramPacket;
                 gplayers.nofall_Position++;
                 gplayers.nofall = gplayers.nofall_Flying + gplayers.nofall_PositionLook + gplayers.nofall_Position + gplayers.nofall_Look;
-                if(gplayers.nofall > 14 && gplayers.isOnGround() && !gplayers.getOnGround()){
-                    paramPacket.dissalow();
-                }
                 return paramPacket;
             }
         });
@@ -74,9 +68,6 @@ public class NoFall extends CheatListener{
                 if(gplayers == null)return paramPacket;
                 gplayers.nofall_Flying++;
                 gplayers.nofall = gplayers.nofall_Flying + gplayers.nofall_PositionLook + gplayers.nofall_Position + gplayers.nofall_Look;
-                if(gplayers.nofall > 14 && gplayers.isOnGround() && !gplayers.getOnGround()){
-                    paramPacket.dissalow();
-                }
                 return paramPacket;
             }
         });
@@ -95,9 +86,6 @@ public class NoFall extends CheatListener{
                 if(gplayers == null)return paramPacket;
                 gplayers.nofall_Look++;
                 gplayers.nofall = gplayers.nofall_Flying + gplayers.nofall_PositionLook + gplayers.nofall_Position + gplayers.nofall_Look;
-                if(gplayers.nofall > 14 && gplayers.isOnGround() && !gplayers.getOnGround()){
-                    paramPacket.dissalow();
-                }
                 return paramPacket;
             }
         });

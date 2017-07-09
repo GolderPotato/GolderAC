@@ -33,6 +33,10 @@ public class GACPlayer extends CraftPlayer{
     }
 
     public HashMap<CheatType, String> violations = new HashMap<>();
+    public List<Location> aims = new ArrayList<>();
+    public List<Integer> aimResults = new ArrayList<>();
+    public boolean wentUP;
+    public boolean wentDOWN;
 
     public int AllPackets = 0;
     public int KeepAlive = 0;
@@ -47,6 +51,7 @@ public class GACPlayer extends CraftPlayer{
     public int nofall_PositionLook = 0;
     public int nofall_Flying = 0;
     public int nofall_Position = 0;
+    public double nofall_height = 0.0D;
     public int nofall = 0;
 
     public int CPS = 0;

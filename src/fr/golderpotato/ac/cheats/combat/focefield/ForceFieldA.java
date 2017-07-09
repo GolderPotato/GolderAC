@@ -89,6 +89,7 @@ public class ForceFieldA extends CheatListener{
             NPC npc = new NPC(getRandomString(16), behindLocation);
             npc.spawn(player);
             npcs.put(player, npc);
+
         }
         catch (Exception e)
         {

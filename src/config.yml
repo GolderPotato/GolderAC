@@ -161,6 +161,8 @@ safewalk:
 spider:
   enabled: true
   autoban: false
+illegalmovement:
+  enabled: true
+  autoban: true
 ###################
-
-
+#Enjoy! =D

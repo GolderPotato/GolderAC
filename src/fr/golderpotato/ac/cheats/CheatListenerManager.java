@@ -6,10 +6,7 @@ import fr.golderpotato.ac.cheats.combat.focefield.*;
 import fr.golderpotato.ac.cheats.movement.MovementCheckHandler;
 import fr.golderpotato.ac.cheats.movement.MovementCheckManager;
 import fr.golderpotato.ac.cheats.movement.checks.*;
-import fr.golderpotato.ac.cheats.other.FastEat;
-import fr.golderpotato.ac.cheats.other.FastPlace;
-import fr.golderpotato.ac.cheats.other.MoreInventory;
-import fr.golderpotato.ac.cheats.other.NoFall;
+import fr.golderpotato.ac.cheats.other.*;
 import fr.golderpotato.ac.cheats.packet.*;
 import org.bukkit.Bukkit;
 
@@ -46,6 +43,8 @@ public class CheatListenerManager {
         add(new HighJump());
         //add(new SafeWalk());
         add(new Spider());
+        add(new FlightV2());
+        add(new HeadTwist());
 
         //OTHER
         add(new Blink());
