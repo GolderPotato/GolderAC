@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/Desktop/SERVEUR-1.8.8/spigot-1.8.8.jar!/" />
       <root url="jar://$USER_HOME$/Desktop/BUNGEE/BungeeCord.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/SERVEUR-1.8.8/rabit.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

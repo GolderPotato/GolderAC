@@ -1,36 +1,591 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/RabbitPacket.java" line="11" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketAlert.java" line="15" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a06359f1-bb61-470a-83c1-d01dcdfad70c" name="Default" comment="first commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/FlightV2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/HeadTwist.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/CheatListenerManager.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/CheatListenerManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/CheatType.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/CheatType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA$3.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$1.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$2.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$3.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$4.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/player/GACPlayer.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/player/GACPlayer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/machine/OSType.class" afterPath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/machine/OSType.class" />
+    <list default="true" id="a06359f1-bb61-470a-83c1-d01dcdfad70c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/twitter4j_core_4_0_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/RabbitMQ.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketDestination.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketSender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/RabbitPacket.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketAlert.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketBroadCast.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketKick.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketTP.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/utils/BungeeUtils.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/bungee.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/config.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/Bypass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/ChatUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/bungee/BungeePlugin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/bungee/bungee/listener/MessageEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/bungee/command/Command.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/bungee/command/CommandManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/bungee/command/commands/AlertMods.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/bungee/command/commands/BroadCast.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/bungee/command/commands/BungeeTP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/CheatListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/CheatListenerManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/CheatType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/AntiKnockBack$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/AntiKnockBack$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/AntiKnockBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/FastBow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/Reach$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/Reach.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldB$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldC$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldC.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/MovementCheck.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/MovementCheckHandler$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/MovementCheckHandler$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/MovementCheckHandler$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/MovementCheckHandler$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/MovementCheckHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/MovementCheckManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/Flight$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/Flight.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/Glide.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/HighJump$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/HighJump.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/Jesus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/SafeWalk.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/SpeedHack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/Spider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/movement/checks/Step.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/FastEat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/FastPlace$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/FastPlace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/MoreInventory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/other/NoFall.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/Blink$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/Blink$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/Blink.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/EntityUseListener$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/EntityUseListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/NoSlowDown$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/NoSlowDown$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/NoSlowDown.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/TabComplete$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/TabComplete$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/cheats/packet/TabComplete.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/CommandAbstract.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/CommandManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/commands/Ban.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/commands/BungeeTP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/commands/CheatList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/commands/ClearChat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/commands/Machine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/commands/PacketList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/commands/PluginMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/command/commands/Velocity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/listener/ListenerManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/listener/listeners/PlayerJoin$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/listener/listeners/PlayerJoin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/listener/listeners/PlayerQuit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/listener/listeners/PlayerRespawn$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/listener/listeners/PlayerRespawn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/listener/listeners/PlayerTeleport$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/listener/listeners/PlayerTeleport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/packet/ChannelHandler$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/packet/ChannelHandler$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/packet/ChannelHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/packet/GACPacketHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/packet/GACPackets.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/packet/Packet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/packet/PacketBuild.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/packet/PacketSource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/packet/PacketType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/player/GACPlayer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/runnable/MainRunnable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/runnable/NoFallRunnable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/sql/BanSQL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/sql/LogSQL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/sql/SQLConnection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/twitter/Twitter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/BungeeCord.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/NMS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/NPC.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/PluginMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/PositionUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/Reflection.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/ReflectionUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/ServerUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/TPS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/machine/MachineInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/machine/MachineUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/fr/golderpotato/ac/utils/machine/OSType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/plugin.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/AccountSettings.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/AccountSettingsJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/AccountTotals.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/AccountTotalsJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/BASE64Encoder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Category.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/CategoryJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ConnectionLifeCycleListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/CursorSupport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/DirectMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/DirectMessageJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Dispatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/DispatcherFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/DispatcherImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/DispatcherImpl$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/DispatcherImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/EntityIndex.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/EntitySupport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ExceptionDiagnosis.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ExtendedMediaEntity$Variant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ExtendedMediaEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ExtendedMediaEntityJSONImpl$Variant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ExtendedMediaEntityJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Friendship.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/FriendshipJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/GeoLocation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/GeoQuery.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HTMLEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HashtagEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HashtagEntityJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpClientBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpClientConfiguration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpClientFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpClientImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpClientImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpParameter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpResponseCode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpResponseEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpResponseImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/HttpResponseListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/IDs.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/IDsJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JSONArray.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JSONException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JSONImplFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JSONObject$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JSONObject$Null.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JSONObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JSONObjectType$Type.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JSONObjectType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JSONTokener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JULLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/JULLoggerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/LanguageJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Location.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/LocationJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Logger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/LoggerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/MediaEntity$Size.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/MediaEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/MediaEntityJSONImpl$Size.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/MediaEntityJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/NullLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/NullLoggerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/OEmbed.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/OEmbedJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/OEmbedRequest$Align.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/OEmbedRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/PagableResponseList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/PagableResponseListImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Paging.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ParseUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Place.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/PlaceJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Query$ResultType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Query$Unit.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Query.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/QueryResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/QueryResultJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/RateLimitStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/RateLimitStatusEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/RateLimitStatusJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/RateLimitStatusListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Relationship.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/RelationshipJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/RequestMethod.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ResponseList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ResponseListImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/SavedSearch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/SavedSearchJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Scopes.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/ScopesImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Status.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/StatusDeletionNotice.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/StatusDeletionNoticeImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/StatusJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/StatusUpdate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/StdOutLogger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/StdOutLoggerFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/StreamingGZIPInputStream.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/StringUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/SymbolEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TimeZone.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TimeZoneJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Trend.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TrendJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Trends.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TrendsJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TweetEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Twitter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterAPIConfiguration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterAPIConfigurationJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterAPIMonitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterBaseImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterBaseImpl$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterBaseImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterObjectFactory$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterObjectFactory$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/TwitterResponseImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/URLEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/URLEntityJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/UploadedMedia.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/UserJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/UserList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/UserListJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/UserMentionEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/UserMentionEntityJSONImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/Version.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/XAuthAuthorization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/DirectMessagesResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/FavoritesResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/FriendsFollowersResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/HelpResources$Language.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/HelpResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/ListsResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/PlacesGeoResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/SavedSearchesResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/SearchResource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/SpamReportingResource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/SuggestedUsersResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/TimelinesResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/TrendsResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/TweetsResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/api/UsersResources.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/AccessToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/Authorization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/AuthorizationConfiguration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/AuthorizationFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/BasicAuthorization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/NullAuthorization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/OAuth2Authorization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/OAuth2Support.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/OAuth2Token.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/OAuthAuthorization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/OAuthSupport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/OAuthToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/auth/RequestToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/conf/Configuration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/conf/ConfigurationBase$MyHttpClientConfiguration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/conf/ConfigurationBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/conf/ConfigurationBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/conf/ConfigurationContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/conf/ConfigurationFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/conf/PropertyConfiguration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/conf/PropertyConfigurationFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/json/DataObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/management/APIStatistics.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/management/APIStatisticsMBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/management/APIStatisticsOpenMBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/management/InvocationStatistics.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/management/InvocationStatisticsCalculator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/util/CharacterUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/util/TimeSpanConverter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GolderAC/twitter4j/util/function/Consumer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bungee.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/Bypass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/ChatUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/BungeePlugin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/bungee/listener/MessageEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/Command.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/CommandManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/commands/AlertMods.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/commands/BroadCast.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/commands/BungeeTP.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatListenerManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/AntiKnockBack.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/FastBow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/Reach.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldB.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldC.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/MovementCheck.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/MovementCheckHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/MovementCheckManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Flight.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/FlightV2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Glide.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/HighJump.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Jesus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/SafeWalk.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/SpeedHack.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Spider.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Step.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/FastEat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/FastPlace.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/HeadTwist.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/MoreInventory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/NoFall.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/Blink.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/EntityUseListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/NoSlowDown.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/TabComplete.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/CommandAbstract.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/CommandManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/Ban.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/BungeeTP.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/CheatList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/ClearChat.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/Machine.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/PacketList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/PluginMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/Velocity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/listener/ListenerManager.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/listener/listeners/PlayerJoin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/listener/listeners/PlayerQuit.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/listener/listeners/PlayerRespawn.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/listener/listeners/PlayerTeleport.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/ChannelHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/GACPacketHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/GACPackets.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/Packet.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/PacketBuild.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/PacketSource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/PacketType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/player/GACPlayer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/runnable/MainRunnable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/runnable/NoFallRunnable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/sql/BanSQL.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/sql/LogSQL.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/sql/SQLConnection.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/twitter/Twitter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/BungeeCord.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/NMS.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/NPC.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/PluginMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/PositionUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/Reflection.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/ReflectionUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/ServerUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/TPS.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/OSType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/AccountSettings.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/AccountSettingsJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/AccountTotals.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/AccountTotalsJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/BASE64Encoder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Category.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/CategoryJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/ConnectionLifeCycleListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/CursorSupport.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/DirectMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/DirectMessageJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Dispatcher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/DispatcherFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/DispatcherImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/EntityIndex.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/EntitySupport.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/ExceptionDiagnosis.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/ExtendedMediaEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/ExtendedMediaEntityJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Friendship.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/FriendshipJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/GeoLocation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/GeoQuery.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HTMLEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HashtagEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HashtagEntityJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpClient.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpClientBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpClientConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpClientFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpClientImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpParameter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpResponseCode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpResponseEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpResponseImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/HttpResponseListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/IDs.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/IDsJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/JSONArray.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/JSONException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/JSONImplFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/JSONObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/JSONObjectType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/JSONTokener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/JULLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/JULLoggerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/LanguageJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Location.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/LocationJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Logger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/LoggerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/MediaEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/MediaEntityJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/NullLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/NullLoggerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/OEmbed.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/OEmbedJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/OEmbedRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/ObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/PagableResponseList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/PagableResponseListImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Paging.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/ParseUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Place.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/PlaceJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Query.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/QueryResult.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/QueryResultJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/RateLimitStatus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/RateLimitStatusEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/RateLimitStatusJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/RateLimitStatusListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Relationship.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/RelationshipJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/RequestMethod.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/ResponseList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/ResponseListImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/SavedSearch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/SavedSearchJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Scopes.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/ScopesImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Status.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/StatusDeletionNotice.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/StatusDeletionNoticeImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/StatusJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/StatusUpdate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/StdOutLogger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/StdOutLoggerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/StreamingGZIPInputStream.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/StringUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/SymbolEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TimeZone.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TimeZoneJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Trend.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TrendJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Trends.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TrendsJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TweetEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Twitter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterAPIConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterAPIConfigurationJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterAPIMonitor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterBaseImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/TwitterResponseImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/URLEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/URLEntityJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/UploadedMedia.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/UserJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/UserList.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/UserListJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/UserMentionEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/UserMentionEntityJSONImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/Version.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/XAuthAuthorization.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/DirectMessagesResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/FavoritesResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/FriendsFollowersResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/HelpResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/ListsResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/PlacesGeoResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/SavedSearchesResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/SearchResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/SpamReportingResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/SuggestedUsersResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/TimelinesResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/TrendsResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/TweetsResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/UsersResources.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/api/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/AccessToken.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/Authorization.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/AuthorizationConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/AuthorizationFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/BasicAuthorization.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/NullAuthorization.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/OAuth2Authorization.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/OAuth2Support.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/OAuth2Token.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/OAuthAuthorization.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/OAuthSupport.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/OAuthToken.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/RequestToken.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/auth/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/conf/Configuration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/conf/ConfigurationBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/conf/ConfigurationBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/conf/ConfigurationContext.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/conf/ConfigurationFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/conf/PropertyConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/conf/PropertyConfigurationFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/conf/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/json/DataObjectFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/json/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/management/APIStatistics.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/management/APIStatisticsMBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/management/APIStatisticsOpenMBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/management/InvocationStatistics.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/management/InvocationStatisticsCalculator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/management/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/util/CharacterUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/util/TimeSpanConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/util/function/Consumer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/twitter4j/util/package-info.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/spigot_1_8_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/spigot_1_8_8.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GolderAC/config.yml" afterPath="$PROJECT_DIR$/out/production/GolderAC/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.yml" afterPath="$PROJECT_DIR$/src/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatListenerManager.java" afterPath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatListenerManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatType.java" afterPath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.java" afterPath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/NoFall.java" afterPath="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/NoFall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/player/GACPlayer.java" afterPath="$PROJECT_DIR$/src/fr/golderpotato/ac/player/GACPlayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineUtils.java" afterPath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/OSType.java" afterPath="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/OSType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GolderAC.iml" afterPath="$PROJECT_DIR$/GolderAC.iml" />
     </list>
     <ignored path="GolderAC.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/SESSIONSERVER/.gradle/" />
     <ignored path="$PROJECT_DIR$/SESSIONSERVER/build/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,103 +627,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CommandAbstract.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/command/CommandAbstract.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/command/CommandManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="21" column="24" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="1190">
+              <caret line="70" column="21" selection-start-line="65" selection-start-column="6" selection-end-line="70" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Twitter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/twitter/Twitter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OSType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/OSType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MachineUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MachineInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineInfo.java">
+      <file leaf-file-name="PacketDestination.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketDestination.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/NPC.java">
+      <file leaf-file-name="RabbitPacketBroadCast.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketBroadCast.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BungeeCord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/BungeeCord.java">
+      <file leaf-file-name="RabbitPacketAlert.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketAlert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PacketListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RabbitPacketTP.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketTP.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ban.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/Ban.java">
+      <file leaf-file-name="RabbitPacketKick.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketKick.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClearChat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/ClearChat.java">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/plugin.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Twitter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/twitter/Twitter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -456,57 +1009,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/plugin.yml" />
         <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/twitter/Twitter.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/ServerUtil.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/MachineUtils.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineInfo.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/command/CommandManager.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/Machine.java" />
-        <option value="$USER_HOME$/Desktop/GolderAPI/src/fr/golderpotato/api/utils/packet/Packet.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/Main.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/AntiLag.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/PacketBuild.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/PacketType.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/GACPacketHandler.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/Packet.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/GACPackets.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/NoSlowDown.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/packet/ChannelHandler.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/Reach.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Glide.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/HighJump.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Jesus.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/FastEat.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/FastPlace.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/Blink.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/EntityUseListener.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/TabComplete.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/SafeWalk.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/NPC.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/CommandManager.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/bungee/listener/MessageEvent.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Spider.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldB.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldC.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/FastBow.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/MoreInventory.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Step.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/AntiKnockBack.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Flight.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/MovementCheckHandler.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/runnable/MainRunnable.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/OSType.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/FlightV2.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/player/GACPlayer.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/NoFall.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/Aimbot.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatType.java" />
-        <option value="$PROJECT_DIR$/src/config.yml" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatListenerManager.java" />
-        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/HeadTwist.java" />
         <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineUtils.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineInfo.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/OSType.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/BungeeCord.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/NMS.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/NPC.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/PluginMessage.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/PositionUtils.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/Reflection.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/ServerUtil.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/utils/TPS.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/Bypass.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/ChatUtils.java" />
+        <option value="$PROJECT_DIR$/src/fr/golderpotato/ac/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/bungee/bungee/listener/MessageEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/CheatListenerManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/Step.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketSerialisation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/RabbitPacketMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/RabbitPacket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/combat/Reach.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/packet/Blink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/utils/TPS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/RabbitMQ.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/bungee/command/commands/AlertMods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/bungee/command/commands/BroadCast.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/utils/machine/ConsoleColours.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketDestination.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketAlert.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketKick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/commands/BungeeTP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketTP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketBroadCast.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/bungee/BungeePlugin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/CheatType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/utils/BungeeUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/combat/FastBow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/player/GACPlayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/SafeWalk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/runnable/MainRunnable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/listener/listeners/PlayerJoin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/commands/PluginMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/CommandManager.java" />
+        <option value="$PROJECT_DIR$/GolderAC.iml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -518,12 +1071,19 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
+    <option name="width" value="1692" />
     <option name="height" value="1036" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -551,8 +1111,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -599,6 +1160,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -614,6 +1223,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -636,6 +1253,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -665,6 +1290,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authentication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -684,6 +1351,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -709,6 +1384,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -728,6 +1411,116 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rabbit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rabbit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ac" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rabbit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GolderAC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -753,6 +1546,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -775,6 +1576,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -794,6 +1603,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -823,6 +1640,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -842,6 +1667,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -871,6 +1704,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -890,6 +1731,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -919,6 +1768,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -945,6 +1802,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -968,6 +1833,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1001,6 +1874,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ac" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1024,6 +1905,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1057,25 +1946,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ac" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bungee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GolderAC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GolderAC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1084,97 +1959,39 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bungee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="command" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GolderAC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GolderAC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ac" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bungee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="command" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GolderAC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GolderAC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ac" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bungee" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listener" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/twitter4j-core-4.0.4.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20689656" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="golderac" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/other/HeadTwist.java&#10;Cheatli&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;Hea&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/other/HeadTwist.java&#10;Ch&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatType.java&#10;CheatTy&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatType.java&#10;CheatListen&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;Cheat&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;No&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/other/NoFall.java&#10;GAC&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/player/GACPlayer.java&#10;NoFall&#9;PSI&#9;JAVA://fr.golderpotato.ac.cheats.other.NoFall&#10;Aim&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/combat/Aimbot.java&#10;Fli&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/movement/checks/FlightV2.java&#10;CheatLi&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;GACPL&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/player/GACPlayer.java&#10;ForceFieldA&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.java&#10;NPC&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/utils/NPC.java&#10;Mai&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/runnable/MainRunnable.java&#10;NoFa&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/other/NoFall.java&#10;Main&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/runnable/MainRunnable.java&#10;Fl&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/movement/checks/Flight.java&#10;NoFAll&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/other/NoFall.java&#10;M&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/runnable/MainRunnable.java&#10;Bl&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/packet/Blink.java&#10;MainR&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/runnable/MainRunnable.java&#10;Blink&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/packet/Blink.java&#10;Anti&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/combat/AntiKnockBack.java&#10;Step&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/movement/checks/Step.java&#10;cheatT&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatType.java&#10;Manager&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;npc&#9;PSI&#9;JAVA://fr.golderpotato.ac.utils.NPC&#10;CheatLis&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;GACpl&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/player/GACPlayer.java&#10;Play&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/player/GACPlayer.java&#10;NoFal&#9;PSI&#9;JAVA://fr.golderpotato.ac.runnable.NoFallRunnable&#10;CheatT&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatType.java&#10;MainRu&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/runnable/MainRunnable.java&#10;config.yml&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/config.yml&#10;confi&#9;PSI&#9;JAVA://twitter4j.conf.Configuration&#10;Chea&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatType.java&#10;MainRun&#9;PSI&#9;JAVA://fr.golderpotato.ac.runnable.MainRunnable&#10;jOi&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/listener/listeners/PlayerJoin.java&#10;PacketT&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/packet/PacketType.java&#10;Mac&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/command/commands/Machine.java&#10;MachineU&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/utils/machine/MachineUtils.java&#10;Machin&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/utils/machine/MachineUtils.java&#10;Ma&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/utils/machine/MachineUtils.java&#10;Tw&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/twitter/Twitter.java&#10;Nos&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/packet/NoSlowDown.java&#10;Re&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/combat/Reach.java&#10;RE&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/combat/Reach.java" />
+    <property name="SearchEverywhereHistoryKey" value="GAC&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/player/GACPlayer.java&#10;GACPl&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/player/GACPlayer.java&#10;Main&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/Main.java&#10;CheatT&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/cheats/CheatType.java&#10;Rab&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketTP.java&#10;Cheat&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/cheats/CheatType.java&#10;Chat&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/ChatUtils.java&#10;BungeeUtils&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/utils/BungeeUtils.java&#10;PacketLI&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketList.java&#10;PacketLister&#9;null&#9;null&#10;PacketLis&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketListener.java&#10;Packetli&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketListener.java&#10;PacketDe&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketDestination.java&#10;PacketLi&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketListener.java&#10;PacketSe&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketSender.java&#10;Listener&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketListener.java&#10;Rabbi&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/RabbitMQ.java&#10;Rabb&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/RabbitMQ.java&#10;PacketList&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketListener.java&#10;BungeePl&#9;PSI&#9;JAVA://fr.golderpotato.ac.bungee.BungeePlugin&#10;RabbitM&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/RabbitMQ.java&#10;Ra&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/rabbit/packet/RabbitPacket.java&#10;Mai&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/Main.java&#10;NPC&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/main/java/fr/golderpotato/ac/utils/NPC.java&#10;GACPL&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/player/GACPlayer.java&#10;Fl&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/movement/checks/FlightV2.java&#10;MainR&#9;PSI&#9;JAVA://fr.golderpotato.ac.runnable.MainRunnable&#10;AntiLa&#9;PSI&#9;JAVA://fr.golderpotato.ac.cheats.CheatType#ANTILAG&#10;CheatTy&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatType.java&#10;FastE&#9;PSI&#9;JAVA://fr.golderpotato.ac.cheats.other.FastEat&#10;Cheatli&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;Hea&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/other/HeadTwist.java&#10;Ch&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatType.java&#10;CheatListen&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;No&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/other/NoFall.java&#10;NoFall&#9;PSI&#9;JAVA://fr.golderpotato.ac.cheats.other.NoFall&#10;Aim&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/combat/Aimbot.java&#10;Fli&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/movement/checks/FlightV2.java&#10;CheatLi&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;ForceFieldA&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.java&#10;NoFa&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/other/NoFall.java&#10;NoFAll&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/other/NoFall.java&#10;M&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/runnable/MainRunnable.java&#10;Bl&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/packet/Blink.java&#10;Blink&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/packet/Blink.java&#10;Anti&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/combat/AntiKnockBack.java&#10;Step&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/movement/checks/Step.java&#10;cheatT&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatType.java&#10;Manager&#9;FILE&#9;file://C:/Users/Eliaz/IdeaProjects/GolderAC/src/fr/golderpotato/ac/cheats/CheatListenerManager.java&#10;npc&#9;PSI&#9;JAVA://fr.golderpotato.ac.utils.NPC" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Eliaz\IdeaProjects\GolderAC\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Eliaz\IdeaProjects\GolderAC\src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eliaz\IdeaProjects\GolderAC\src" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Maven.GolderAC">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -1355,6 +2172,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1419,6 +2258,37 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="false" name="GolderAC" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+                <option value="install" />
+                <option value="-T1.5C" />
+                <option value="-DskipTests=true" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Maven.GolderAC" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1441,25 +2311,32 @@
       <option name="project" value="LOCAL" />
       <updated>1492872279635</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit">
+      <created>1499611590762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1499611590762</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
+    <frame x="-8" y="-8" width="1692" height="1036" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24473976" sideWeight="0.8210784" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25488997" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3311185" sideWeight="0.5270936" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.068627454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11406423" sideWeight="0.4779951" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.4729064" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27796236" sideWeight="0.47555012" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23533008" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23406863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1472,7 +2349,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45404208" sideWeight="0.17892157" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.393134" sideWeight="0.24877751" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19269103" sideWeight="0.49022004" order="1" side_tool="false" content_ui="tabs" />
@@ -1495,7 +2372,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1504,366 +2381,363 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Spider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/commands/PluginMessage.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/CommandAbstract.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="119">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/FastEat.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/CommandManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="204">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/FastPlace.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/CheatType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="33" selection-end-column="60" />
+        <state relative-caret-position="-1414">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/MoreInventory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/commands/Ban.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        <state relative-caret-position="119">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/NoSlowDown.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/commands/BungeeTP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+        <state relative-caret-position="-261">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/TabComplete.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/commands/Velocity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+        <state relative-caret-position="136">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Step.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/commands/PacketList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/MovementCheck.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/command/commands/ClearChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/packet/TabComplete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/packet/NoSlowDown.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-802">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/packet/EntityUseListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/packet/Blink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/other/NoFall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-737">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/other/MoreInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/other/HeadTwist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/other/FastPlace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/other/FastEat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/MovementCheckManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/MovementCheckHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1451">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/MovementCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/MovementCheckHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="84" column="64" selection-start-line="82" selection-start-column="20" selection-end-line="84" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/runnable/MainRunnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bungee.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/NMS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/PositionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/PluginMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/bungee/listener/MessageEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/commands/AlertMods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/BungeePlugin.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/Step.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="48" column="108" selection-start-line="48" selection-start-column="108" selection-end-line="48" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/AntiKnockBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="86" column="50" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/Blink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/packet/EntityUseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/Velocity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/player/GACPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/NoFall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="87" column="138" selection-start-line="87" selection-start-column="138" selection-end-line="87" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/Aimbot.java" />
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/FastBow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/combat/Reach.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/movement/checks/FlightV2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="87" selection-start-line="17" selection-start-column="87" selection-end-line="17" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="165" column="15" selection-start-line="165" selection-start-column="15" selection-end-line="165" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/packet/Packet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="59" column="95" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/CheatListenerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/cheats/other/HeadTwist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/CommandManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/commands/BungeeTP.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/Spider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/bungee/command/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/command/CommandAbstract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/Ban.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/command/commands/ClearChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/command/CommandManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/OSType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="49" column="65" selection-start-line="49" selection-start-column="65" selection-end-line="49" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/BungeeCord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/machine/MachineInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/utils/NPC.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/SpeedHack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/SafeWalk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/Jesus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/Glide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/FlightV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/movement/checks/Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/combat/Reach.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/combat/FastBow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/combat/AntiKnockBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/cheats/combat/focefield/ForceFieldA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/bungee/BungeePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/fr/golderpotato/ac/bungee/BungeePlugin.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/fr/golderpotato/ac/Bypass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/fr/golderpotato/ac/runnable/MainRunnable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GolderAC.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/twitter/Twitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/golderpotato/ac/twitter/Twitter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="21" selection-start-line="65" selection-start-column="6" selection-end-line="70" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketDestination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketTP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketKick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/PacketListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketBroadCast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/golderpotato/ac/rabbit/packet/packets/RabbitPacketAlert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1875,8 +2749,8 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="library" />
               <type id="artifact" />
+              <type id="library" />
             </show-content>
           </artifact-editor>
           <last-edited>unnamed</last-edited>
@@ -1907,7 +2781,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.20689656" />
               </list>
             </option>
           </splitter-proportions>
@@ -1932,6 +2806,7 @@
             <option name="proportions">
               <list>
                 <option value="0.20689656" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1951,7 +2826,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>spigot-1.8.8</last-edited>
+          <last-edited>twitter4j-core-4.0.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
